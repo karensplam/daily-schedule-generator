@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Daily Schedule Generator</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="normalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+</head>
+
+<body>
+	
+	<header>
+		<h1>Daily Schedule Generator</h1>
+	</header>
+	
+	<main>
+		<div id="daily-schedule">
+			<h1>Today's plan</h1>
+			<p>1st Feb, 2019</p> <!--today-->
+			<div class="daily-schedule-list">
+				<div class="daily-schedule-item">
+					<h2>Breakfast</h2>
+					<p><label for="Time-001">Time: </label>
+					<input type="text" name="Time-001"></p>
+					<i class="fas fa-utensils circle-icon"></i>
+					<button class="btn-remove">×</button>
+				</div>
+				<div class="daily-schedule-item">
+					<h2>Exercise</h2>
+					<p><label for="Time-002">Time: </label>
+					<input type="text" name="Time-002"></p>
+					<i class="fas fa-swimmer circle-icon"></i>
+					<button class="btn-remove">×</button>
+				</div>
+				<div class="daily-schedule-item">
+					<h2>Sleep</h2>
+					<p><label for="Time-002">Time: </label>
+					<input type="text" name="Time-002"></p>
+					<i class="fas fa-bed circle-icon"></i>
+					<button class="btn-remove">×</button>
+				</div>
+			</div>
+			<button id="btn-share">Share</button>
+			<button id="btn-reset">Reset</button>
+
+		</div>
+
+		<section id="customize">
+			<h1>Customise</h1>
+			<form>
+				<!-- https://angular.io/guide/user-input#get-user-input-from-a-template-reference-variable -->
+				<p>
+					<label for="firstName">First name: </label><input type="text" name="firstName">
+				</p>
+
+			<!-- https://material.angular.io/components/datepicker -->
+				<p>
+					<label for="selectDate">Choose a date: </label>
+					<input type="text" name="selectDate">
+				</p>
+
+			<!-- https://material.angularjs.org/1.1.4/demo/colors -->
+				<p>
+					<label for="selectDate">Change Background Colour: </label>
+					<input type="text" name="selectColour">
+				</p>
+			</form>
+		</section>
+		
+		<section id="activity-list">
+			<h1>List of activities</h1>
+			<article class="activity-item">
+				<i class="fas fa-utensils circle-icon"></i>
+				<h2>Breakfast</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+			<article class="activity-item">
+				<i class="fas fa-utensils circle-icon"></i>
+				<h2>Lunch</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+			<article class="activity-item">
+				<i class="fas fa-utensils circle-icon"></i>
+				<h2>Dinner</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+			<article class="activity-item">
+				<i class="fas fa-shower circle-icon"></i>
+				<h2>Shower</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+			<article class="activity-item">
+				<i class="fas fa-bed circle-icon"></i>
+				<h2>Sleep</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+			<article class="activity-item">
+				<i class="fas fa-swimmer circle-icon"></i>
+				<h2>Excercise</h2>
+				<button class="btn-add">+ Add</button>
+			</article>
+		</section>
+
+		<!-- Font Awesome icons:  https://fontawesome.com/icons?d=gallery&m=free -->		
+		
+	</main>
+</body>
+
+</html>
